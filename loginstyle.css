@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.fieldcontainer {
+    width: 1000px;
+    height: 600px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,.5) -5px 5px 12px;
+}
+.fieldcontainer .pic {
+    width: 70%;
+    height: 600px;
+    background:linear-gradient(to top, #DB6ADF,rgba(0,0,0,.8)),url(images/pexels-andrea-piacquadio-3807742.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.signup {
+    width: 30%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+.signup h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.signup form {
+    margin: 40px 20px;
+}
+.signup form input {
+    border: none;
+    border-bottom: 1.5px solid #D0D3D4 ;
+    width: 90%;
+    outline: none;
+    padding: 10px;
+}
+.signup form input[type="checkbox"]{
+    width: 20px;
+    margin-top: 8px;
+}
+.signup form input[type="submit"]{
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(to bottom, #DB6ADF,#AE58DC);
+}
+.signup label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signup button {
+    padding: 8px 100px;
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to bottom, #DB6ADF,#AE58DC);
+    outline: none;
+
+}
+.signup button:hover {
+    color: #000;
+    background: transparent;
+    border: 2px solid black;
+    border-image:linear-gradient(to bottom, #DB6ADF,#AE58DC);
+    border-image-slice:1;
+    
+}
+#overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(12,15,19,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: 10s;
+}
+.login {
+    /* border: 1px solid black; */
+    width:400px;
+    height: 470px;
+    background-color: #AE58DC;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    position: relative;
+}
+.login img {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    
+}
+.login form {
+    width: 300px;
+    margin: auto;
+    height: 200px;
+}
+.login form input {
+    width: 90%;
+    outline: none;
+    margin: 6px auto;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    border-radius: 40px;
+}
+.login form input:focus {
+    background-color: cadetblue;
+    color: #fff;
+}
+.login form input:focus::-webkit-input-placeholder{
+    color:#fff;
+}
+.login form input[type="submit"]{
+    padding: 6px 80px;
+    font-size: 15px;
+    color:#fff;
+    background: linear-gradient(to bottom, #DB6ADF,#AE58DC);
+    box-shadow: rgba(0,0,0,.5) 5px 5px 5px;
+}
+.login form input[type="submit"]:hover{
+    box-shadow: inset rgba(0,0,0,.5) 5px 5px 5px;
+}
+.login form input[type="checkbox"]{
+    width: 10%;
+}
+.login  img[alt="close"] {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 50px;
+}
+.login  img[alt="close"]:hover {
+    box-shadow: rgba(0,0,0,.5) 5px 5px 10px;
+    transform: scale(1.2);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="fieldcontainer">
+        <div class="pic"></div>
+        <div class="signup"> 
+            <h1>Sign Up</h1>
+            <form>
+                <label>First Name</label>
+                <input type="text" name="Firstname" placeholder="First Name">
+                <label>Last Name</label>
+                <input type="text" name="Last Name" placeholder="Last Name">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="shakeelahmedindher@gmail.com">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Set a Password">
+                <label>Confirm Password</label>
+                <input type="password" name="confirm password" placeholder="Confirm Your Password">
+                <input type="checkbox" name="agree"> I agree with terms and conditions
+                <input type="submit" value="Sign Up">
+            </form>
+            <button onclick="show()">Log In</button>
+        </div>
+        </div>
+    
+    <div id="overlay">
+        <div class="login">
+            <img src="images/usericon.png" alt="">
+            <form>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password" id="pass">
+                <input type="checkbox" name="password show" onclick="typechange()">Show Password
+                <input type="submit" name="login" value="Log In" onclick="show()">
+            </form>
+            <img src="images/close.png" id="button" alt="close" onclick="hide()">
+        </div>
+       
+    </div>
+</div>
+
+
+    
+
+    <script>
+
+         var overlay =document.getElementById("overlay");
+        function show(){
+            overlay.style.display="flex";
+            // document.getElementById('overlay').style.transition='20s';
+
+        };
+        
+        function hide(){
+            overlay.style.display="none";
+            // document.getElementById('overlay').style.transition='40s';
+
+        };
+        function typechange(){
+            var change =document.getElementById("pass");
+            if(change.type==="password"){
+                change.type="text";
+            } else {
+                change.type="password";
+            };
+        };
+    </script>
+</body>
+</html>
